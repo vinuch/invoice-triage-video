@@ -1,0 +1,12 @@
+[
+  { "id": "Ep2-RecapHook", "component": "SceneRecapHook", "startWord": "Last" },
+  { "id": "Ep2-CrossedOut-MultiAgent", "component": "CrossedOutConcept", "startWord": "First" },
+  { "id": "Ep2-PullQuote-Reliability", "component": "PullQuote", "startWord": "fastest" },
+  { "id": "Ep2-JobSplitDetail", "component": "JobSplitDetail", "startWord": "duplicates" },
+  { "id": "Ep2-OCR-BeforeAfter", "component": "BeforeAfterFlow", "startWord": "Second" },
+  { "id": "Ep2-LayoutAwareness", "component": "SceneLayoutAwareness", "startWord": "spatial" },
+  { "id": "Ep2-ProviderSwap", "component": "ProviderSwap", "startWord": "Third" },
+  { "id": "Ep2-SchemaEnforcement", "component": "SchemaEnforcement", "startWord": "Fourth" },
+  { "id": "Ep2-RoadmapRecap", "component": "RoadmapRecap", "startWord": "Ingestion" },
+  { "id": "Ep2-ClosingCTA", "component": "SceneClosingCTA2", "startWord": "full" }
+]

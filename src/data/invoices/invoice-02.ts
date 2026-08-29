@@ -9,6 +9,6 @@ export const invoice02: TerminalScript = {
     {type: 'output', text: 'tax: $80.00', frameIn: 75},
     {type: 'output', text: 'stated_total: $100,000.00', frameIn: 90},
     {type: 'output', text: 'validation: subtotal + tax ($1,080.00) != stated_total ✗', frameIn: 120},
-    {type: 'status', text: 'FLAG: MATH_MISMATCH', status: 'mismatch', frameIn: 150},
+    {type: 'status', text: 'FLAG: MATH_MISMATCH', status: 'flag', frameIn: 150},
   ],
 };

@@ -1,0 +1,14 @@
+[
+  { "id": "Scene-OpeningHook", "component": "SceneOpeningHook", "startWord": "This", "startOccurrence": 1 },
+  { "id": "Diagram-Extract", "component": "PipelineDiagram", "startWord": "Every", "startOccurrence": 1, "props": { "highlight": "extract" } },
+  { "id": "Diagram-Validate", "component": "PipelineDiagram", "startWord": "Most", "startOccurrence": 2, "props": { "highlight": "validate" } },
+  { "id": "Diagram-Both", "component": "PipelineDiagram", "startWord": "ran", "startOccurrence": 1, "props": { "highlight": "both" } },
+  { "id": "Terminal-Invoice01-Approved", "component": "TerminalReveal", "startWord": "Clean", "startOccurrence": 1 },
+  { "id": "Terminal-Invoice02-MathMismatch", "component": "TerminalReveal", "startWord": "Subtotal", "startOccurrence": 1 },
+  { "id": "Terminal-Invoice03-MissingPO", "component": "TerminalReveal", "startWord": "PO", "startOccurrence": 1 },
+  { "id": "Terminal-Invoice04-HighValue", "component": "TerminalReveal", "startWord": "7", "startOccurrence": 1 },
+  { "id": "Terminal-Invoice05-Duplicate", "component": "TerminalReveal", "startWord": "vendor", "startOccurrence": 4 },
+  { "id": "BatchSummary", "component": "BatchSummary", "startWord": "guessing", "startOccurrence": 1 },
+  { "id": "Scene-ClosingRecap", "component": "SceneClosingRecap", "startWord": "extraction", "startOccurrence": 1 },
+  { "id": "Scene-ClosingCTA", "component": "SceneClosingCTA", "startWord": "lessons", "startOccurrence": 1 }
+]

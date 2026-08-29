@@ -1,0 +1,287 @@
+[33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv[0m[33m
+[0m
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m24.0[0m[39;49m -> [0m[32;49m26.2.1[0m
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpip install --upgrade pip[0m
+0.00 - 0.32:  Last
+0.32 - 0.66:  lesson
+0.66 - 0.82:  you
+0.82 - 1.02:  saw,
+1.10 - 1.20:  the
+1.20 - 1.54:  splits,
+2.06 - 2.54:  extract,
+2.90 - 3.18:  then
+3.18 - 3.66:  validate,
+4.20 - 4.54:  five
+4.54 - 5.00:  invoices,
+5.24 - 5.36:  five
+5.36 - 5.60:  different
+5.60 - 6.04:  outcomes.
+6.72 - 6.94:  Now
+6.94 - 7.16:  let's
+7.16 - 7.32:  open
+7.32 - 7.50:  the
+7.50 - 7.64:  hood
+7.64 - 7.88:  why
+7.88 - 8.10:  it's
+8.10 - 8.22:  built
+8.22 - 8.44:  this
+8.44 - 8.68:  way
+8.68 - 9.28:  and
+9.28 - 9.40:  the
+9.40 - 9.74:  decisions
+9.74 - 10.02:  that
+10.02 - 10.34:  actually
+10.34 - 10.62:  matter
+10.62 - 10.94:  if
+10.94 - 11.06:  you're
+11.06 - 11.14:  the
+11.14 - 11.28:  one
+11.28 - 11.52:  building
+11.52 - 11.82:  it.
+12.62 - 12.90:  First
+12.90 - 13.30:  decision,
+13.66 - 13.80:  this
+13.80 - 13.90:  is
+13.90 - 14.06:  not
+14.06 - 14.20:  a
+14.20 - 14.44:  multi
+14.44 - 14.70: -agent
+14.70 - 15.10:  system,
+15.32 - 15.50:  no
+15.50 - 15.98:  orchestrator,
+16.34 - 16.44:  no
+16.44 - 16.76:  agent
+16.76 - 17.08:  hand
+17.08 - 17.22: -in
+17.22 - 17.34: -off
+17.34 - 17.48:  to
+17.48 - 17.64:  another
+17.64 - 18.08:  agent,
+18.56 - 18.76:  no
+18.76 - 19.00:  land
+19.00 - 19.24:  graph,
+19.40 - 19.48:  no
+19.48 - 19.72:  crew
+19.72 - 19.96:  AI,
+20.22 - 20.36:  just
+20.36 - 20.62:  two
+20.62 - 21.06:  functions.
+21.92 - 22.36:  Invoice
+22.36 - 22.72:  triage
+22.72 - 23.00:  sounds
+23.00 - 23.26:  like
+23.26 - 23.38:  an
+23.38 - 23.52:  easy
+23.52 - 23.78:  team
+23.78 - 23.92:  of
+23.92 - 24.20:  agents,
+24.42 - 24.54:  one
+24.54 - 24.72:  to
+24.72 - 24.82:  read
+24.82 - 24.92:  the
+24.92 - 25.28:  document,
+25.40 - 25.56:  one
+25.56 - 25.70:  to
+25.70 - 25.86:  check
+25.86 - 26.00:  the
+26.00 - 26.22:  math,
+26.28 - 26.44:  one
+26.44 - 26.58:  to
+26.58 - 27.00:  decide
+27.00 - 27.30:  it
+27.30 - 27.74:  doesn't,
+28.10 - 28.26:  and
+28.26 - 28.46:  building
+28.46 - 28.66:  it
+28.66 - 28.82:  that
+28.82 - 29.02:  way
+29.02 - 29.20:  would
+29.20 - 29.42:  make
+29.42 - 29.54:  it
+29.54 - 29.84:  worse.
+30.92 - 31.14:  Multi
+31.14 - 31.44: -agent
+31.44 - 31.66:  buys
+31.66 - 31.86:  you
+31.86 - 32.10:  something
+32.10 - 32.46:  when
+32.46 - 32.62:  a
+32.62 - 32.74:  sub
+32.74 - 33.00: -task
+33.00 - 33.24:  needs
+33.24 - 33.50:  its
+33.50 - 33.72:  own
+33.72 - 34.04:  reasoning
+34.04 - 34.36:  loop
+34.36 - 34.56:  or
+34.56 - 34.72:  its
+34.72 - 34.90:  own
+34.90 - 35.16:  tools,
+35.68 - 35.90:  validation
+35.90 - 36.34:  here
+36.34 - 36.66:  doesn't
+36.66 - 36.96:  reason,
+37.46 - 37.58:  it
+37.58 - 37.80:  checks
+37.80 - 38.10:  sub
+38.10 - 38.44: -total
+38.44 - 38.72:  plus
+38.72 - 39.00:  tax
+39.00 - 39.32:  equals
+39.32 - 39.74:  total,
+39.92 - 40.12:  that's
+40.12 - 40.22:  not
+40.22 - 40.36:  a
+40.36 - 40.56:  judgment
+40.56 - 40.88:  call,
+41.30 - 41.56:  it's
+41.56 - 41.92:  arithmetic.
+43.18 - 43.34:  The
+43.34 - 43.56:  fastest
+43.56 - 43.82:  way
+43.82 - 43.98:  to
+43.98 - 44.12:  make
+44.12 - 44.28:  an
+44.28 - 44.40:  AI
+44.40 - 44.80:  system
+44.80 - 45.52:  unreliable
+45.52 - 45.76:  is
+45.76 - 45.88:  to
+45.88 - 46.04:  let
+46.04 - 46.18:  a
+46.18 - 46.40:  model
+46.40 - 46.66:  make
+46.66 - 46.76:  a
+46.76 - 47.02:  decision
+47.02 - 47.28:  of
+47.28 - 47.46:  five
+47.46 - 47.70:  line
+47.70 - 47.92:  if
+47.92 - 48.20:  statement
+48.20 - 48.50:  could
+48.50 - 48.72:  make
+48.72 - 49.30:  correctly
+49.30 - 49.64:  every
+49.64 - 49.88:  single
+49.88 - 50.24:  time.
+51.16 - 51.38:  So
+51.38 - 51.66:  every
+51.66 - 51.88:  check
+51.88 - 52.06:  in
+52.06 - 52.22:  this
+52.22 - 52.46:  build,
+52.70 - 52.98:  math,
+52.98 - 53.82:  duplicates
+53.82 - 54.48:  thresholds,
+54.52 - 54.64:  missing
+54.64 - 55.06:  fields,
+55.30 - 55.38:  is
+55.38 - 55.98:  deterministic
+55.98 - 56.30:  python,
+56.98 - 57.18:  same
+57.18 - 57.50:  inputs,
+57.70 - 57.78:  same
+57.78 - 58.18:  outputs
+58.18 - 58.58:  every
+58.58 - 58.88:  time,
+59.06 - 59.18:  no
+59.18 - 59.46:  temperature,
+59.84 - 59.96:  no
+59.96 - 60.20:  prompt
+60.20 - 60.52:  drift.
+61.18 - 61.40:  That's
+61.40 - 61.50:  job
+61.50 - 61.80:  two,
+62.50 - 62.74:  job
+62.74 - 63.02:  one,
+63.10 - 63.28:  reading
+63.28 - 63.44:  the
+63.44 - 63.78:  invoice
+63.78 - 64.10:  is
+64.10 - 64.46:  genuinely
+64.46 - 64.82:  a
+64.82 - 65.04:  language
+65.04 - 65.44:  problem
+65.44 - 66.34:  and
+66.34 - 66.60:  that's
+66.60 - 66.70:  where
+66.70 - 66.82:  the
+66.82 - 67.02:  model
+67.02 - 67.36:  earns
+67.36 - 67.52:  its
+67.52 - 67.76:  keep.
+68.28 - 68.58:  Second
+68.58 - 69.02:  decision,
+69.60 - 69.72:  no
+69.72 - 70.04:  OCR
+70.04 - 70.36:  step.
+71.04 - 71.06:  A
+71.06 - 71.18:  lot
+71.18 - 71.30:  of
+71.30 - 71.60:  document
+71.60 - 72.08:  pipelines
+72.08 - 72.40:  run
+72.40 - 72.80:  OCR
+72.80 - 73.16:  first,
+73.48 - 73.62:  then
+73.62 - 73.86:  hand
+73.86 - 73.98:  the
+73.98 - 74.26:  text
+74.26 - 74.44:  to
+74.44 - 74.56:  an
+74.56 - 75.10:  LLM.
+75.72 - 75.96:  This
+75.96 - 76.28:  build
+76.28 - 76.62:  sends
+76.62 - 76.84:  the
+76.84 - 77.06:  image
+77.06 - 77.40:  straight
+77.40 - 77.64:  to
+77.64 - 77.74:  a
+77.74 - 77.94:  vision
+77.94 - 78.28:  model.
+79.06 - 79.60:  OCR
+79.60 - 79.84:  throws
+79.84 - 80.10:  away
+80.10 - 80.46:  layout,
+80.66 - 80.74:  it
+80.74 - 81.16:  flattens
+81.16 - 81.30:  the
+81.30 - 81.56:  table
+81.56 - 81.82:  into
+81.82 - 81.96:  a
+81.96 - 82.16:  wall
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^C^C^C^C^C^C^C^C^C^C^CTraceback (most recent call last):
+  File "<string>", line 5, in <module>
+  File "/usr/local/lib/python3.11/site-packages/faster_whisper/transcribe.py", line 1213, in generate_segments
+    ) = self.generate_with_fallback(encoder_output, prompt, tokenizer, options)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/faster_whisper/transcribe.py", line 1446, in generate_with_fallback
+    result = self.model.generate(
+             ^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
