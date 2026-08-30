@@ -19,6 +19,7 @@ import {BatchSummary} from './compositions/BatchSummary';
 import {SceneClosingRecap} from './compositions/SceneClosingRecap';
 import {SceneClosingCTA} from './compositions/SceneClosingCTA';
 import {ArchitectureDiagram} from './compositions/ArchitectureDiagram';
+import {SceneBeats} from './compositions/SceneBeats';
 export const componentMap: Record<string, ComponentType<any>> = {
   SceneRecapHook,
   CrossedOutConcept,
@@ -37,4 +38,5 @@ export const componentMap: Record<string, ComponentType<any>> = {
   SceneClosingRecap,
   SceneClosingCTA,
   ArchitectureDiagram,
+  SceneBeats,
 };

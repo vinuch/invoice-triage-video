@@ -2,18 +2,28 @@ import React from 'react';
 import {AbsoluteFill, useCurrentFrame, useVideoConfig, spring} from 'remotion';
 import {colors, fonts} from '../design-tokens';
 
-const built = [
+export type ArchitectureNode = {label: string; sub: string};
+
+const defaultBuilt: ArchitectureNode[] = [
   {label: 'extract.py', sub: 'VLM extraction'},
   {label: 'validate.py', sub: 'validation engine'},
 ];
 
-const future = [
+const defaultFuture: ArchitectureNode[] = [
   {label: 'inbox_ingest.py', sub: 'real inbox ingestion'},
   {label: 'review_ui/', sub: 'review dashboard'},
   {label: 'benchmark.py', sub: 'real-invoice benchmark'},
 ];
 
-export const ArchitectureDiagram: React.FC = () => {
+export type ArchitectureDiagramProps = {
+  built?: ArchitectureNode[];
+  future?: ArchitectureNode[];
+};
+
+export const ArchitectureDiagram: React.FC<ArchitectureDiagramProps> = ({
+  built = defaultBuilt,
+  future = defaultFuture,
+}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
 

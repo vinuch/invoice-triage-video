@@ -1,0 +1,9 @@
+[
+  { "id": "CodexRunme-Hook", "component": "PullQuote", "startWord": "Somewhere", "startOccurrence": 1 },
+  { "id": "CodexRunme-Problem", "component": "SceneBeats", "startWord": "Every", "startOccurrence": 1 },
+  { "id": "CodexRunme-CoreConcept", "component": "SceneBeats", "startWord": "run", "startOccurrence": 1 },
+  { "id": "CodexRunme-Architecture", "component": "ArchitectureDiagram", "startWord": "Here's", "startOccurrence": 1 },
+  { "id": "CodexRunme-Payoff", "component": "PullQuote", "startWord": "Nobody", "startOccurrence": 2 },
+  { "id": "CodexRunme-Caveat", "component": "CrossedOutConcept", "startWord": "clear", "startOccurrence": 1 },
+  { "id": "CodexRunme-Thesis", "component": "PullQuote", "startWord": "pitch", "startOccurrence": 1 }
+]

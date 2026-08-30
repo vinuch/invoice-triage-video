@@ -7,6 +7,8 @@ import {FinalVideo} from './compositions/FinalVideo';
 import {FinalVideoEp2} from './compositions/FinalVideoEp2';
 import {FinalVideoEp3} from './compositions/FinalVideoEp3';
 import {FinalVideoEp4} from './compositions/FinalVideoEp4';
+import {FinalVideoEp6} from './compositions/FinalVideoEp6';
+import {FinalVideoCodexRunme} from './compositions/FinalVideoCodexRunme';
 import {SceneOpeningHookV2} from './compositions/SceneOpeningHookV2';
 import {SceneJobOne} from './compositions/SceneJobOne';
 import {SceneJobTwo} from './compositions/SceneJobTwo';
@@ -14,6 +16,7 @@ import {SceneBothJobs} from './compositions/SceneBothJobs';
 import {episode02Timeline} from './data/timeline/episode02';
 import {episode03Timeline} from './data/timeline/episode03';
 import {episode04Timeline} from './data/timeline/episode04';
+import {episode06Timeline} from './data/timeline/episode06';
 import {episode01Timeline} from './data/timeline/episode01';
 import {componentMap} from './componentMap';
 
@@ -52,6 +55,22 @@ export const RemotionRoot: React.FC = () => {
         id="FinalVideoEp4"
         component={FinalVideoEp4}
         durationInFrames={5735}
+        fps={FPS}
+        width={WIDTH}
+        height={HEIGHT}
+      />
+      <Composition
+        id="FinalVideoEp6"
+        component={FinalVideoEp6}
+        durationInFrames={8899}
+        fps={FPS}
+        width={WIDTH}
+        height={HEIGHT}
+      />
+      <Composition
+        id="FinalVideoCodexRunme"
+        component={FinalVideoCodexRunme}
+        durationInFrames={2749}
         fps={FPS}
         width={WIDTH}
         height={HEIGHT}
@@ -153,6 +172,20 @@ export const RemotionRoot: React.FC = () => {
 ))}
 {/* Episode 4 -- driven by episode04Timeline (word-timestamp derived) */}
 {episode04Timeline.map((scene) => (
+  <Composition
+    key={scene.id}
+    id={scene.id}
+    component={componentMap[scene.component as keyof typeof componentMap]}
+    durationInFrames={Math.round((scene.endSec - scene.startSec) * FPS)}
+    fps={FPS}
+    width={WIDTH}
+    height={HEIGHT}
+    defaultProps={scene.props}
+  />
+))}
+
+{/* Episode 6 -- driven by episode06Timeline (word-timestamp derived) */}
+{episode06Timeline.map((scene) => (
   <Composition
     key={scene.id}
     id={scene.id}
