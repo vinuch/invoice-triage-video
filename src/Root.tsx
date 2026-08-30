@@ -9,6 +9,7 @@ import {FinalVideoEp3} from './compositions/FinalVideoEp3';
 import {FinalVideoEp4} from './compositions/FinalVideoEp4';
 import {FinalVideoEp6} from './compositions/FinalVideoEp6';
 import {FinalVideoCodexRunme} from './compositions/FinalVideoCodexRunme';
+import {FinalVideoEp5} from './compositions/FinalVideoEp5';
 import {SceneOpeningHookV2} from './compositions/SceneOpeningHookV2';
 import {SceneJobOne} from './compositions/SceneJobOne';
 import {SceneJobTwo} from './compositions/SceneJobTwo';
@@ -17,6 +18,7 @@ import {episode02Timeline} from './data/timeline/episode02';
 import {episode03Timeline} from './data/timeline/episode03';
 import {episode04Timeline} from './data/timeline/episode04';
 import {episode06Timeline} from './data/timeline/episode06';
+import {episode05Timeline} from './data/timeline/episode05';
 import {episode01Timeline} from './data/timeline/episode01';
 import {componentMap} from './componentMap';
 
@@ -71,6 +73,14 @@ export const RemotionRoot: React.FC = () => {
         id="FinalVideoCodexRunme"
         component={FinalVideoCodexRunme}
         durationInFrames={2749}
+        fps={FPS}
+        width={WIDTH}
+        height={HEIGHT}
+      />
+      <Composition
+        id="FinalVideoEp5"
+        component={FinalVideoEp5}
+        durationInFrames={9532}
         fps={FPS}
         width={WIDTH}
         height={HEIGHT}
@@ -186,6 +196,20 @@ export const RemotionRoot: React.FC = () => {
 
 {/* Episode 6 -- driven by episode06Timeline (word-timestamp derived) */}
 {episode06Timeline.map((scene) => (
+  <Composition
+    key={scene.id}
+    id={scene.id}
+    component={componentMap[scene.component as keyof typeof componentMap]}
+    durationInFrames={Math.round((scene.endSec - scene.startSec) * FPS)}
+    fps={FPS}
+    width={WIDTH}
+    height={HEIGHT}
+    defaultProps={scene.props}
+  />
+))}
+
+{/* Episode 5 -- driven by episode05Timeline (word-timestamp derived) */}
+{episode05Timeline.map((scene) => (
   <Composition
     key={scene.id}
     id={scene.id}
