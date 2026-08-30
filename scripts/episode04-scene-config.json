@@ -1,0 +1,13 @@
+[
+  { "id": "Ep4-Recap", "component": "ArchitectureDiagram", "startWord": "so", "startOccurrence": 1 },
+  { "id": "Ep4-Hook", "component": "ArchitectureDiagram", "startWord": "wrinkle", "startOccurrence": 1 },
+  { "id": "Ep4-Normalize", "component": "TerminalReveal", "startWord": "if", "startOccurrence": 1 },
+  { "id": "Ep4-UploadAPI", "component": "TerminalReveal", "startWord": "start", "startOccurrence": 1 },
+  { "id": "Ep4-RunUpload", "component": "TerminalReveal", "startWord": "run", "startOccurrence": 1 },
+  { "id": "Ep4-GmailOAuthSetup", "component": "TerminalReveal", "startWord": "harder", "startOccurrence": 1 },
+  { "id": "Ep4-OAuthHeadless", "component": "TerminalReveal", "startWord": "first", "startOccurrence": 2 },
+  { "id": "Ep4-PollingQuery", "component": "TerminalReveal", "startWord": "narrow", "startOccurrence": 1 },
+  { "id": "Ep4-RunGmail", "component": "TerminalReveal", "startWord": "run", "startOccurrence": 4 },
+  { "id": "Ep4-RoadmapRecap", "component": "RoadmapRecap", "startWord": "next", "startOccurrence": 2 },
+  { "id": "Ep4-ClosingCTA", "component": "SceneClosingCTA2", "startWord": "code", "startOccurrence": 1 }
+]

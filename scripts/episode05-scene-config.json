@@ -1,0 +1,14 @@
+[
+  { "id": "Ep5-Recap", "component": "ArchitectureDiagram", "startWord": "this", "startOccurrence": 1 },
+  { "id": "Ep5-SchemaContract", "component": "TerminalReveal", "startWord": "prompt", "startOccurrence": 1 },
+  { "id": "Ep5-ConfidenceFields", "component": "PullQuote", "startWord": "notice", "startOccurrence": 1 },
+  { "id": "Ep5-NullRule", "component": "TerminalReveal", "startWord": "rules", "startOccurrence": 1 },
+  { "id": "Ep5-ThreeProviders", "component": "TerminalReveal", "startWord": "providers", "startOccurrence": 1 },
+  { "id": "Ep5-ProviderAbstraction", "component": "TerminalReveal", "startWord": "sdks", "startOccurrence": 1 },
+  { "id": "Ep5-RunClean", "component": "TerminalReveal", "startWord": "run", "startOccurrence": 1 },
+  { "id": "Ep5-RunMessy", "component": "TerminalReveal", "startWord": "messier", "startOccurrence": 1 },
+  { "id": "Ep5-FailureModes", "component": "TerminalReveal", "startWord": "let's", "startOccurrence": 1 },
+  { "id": "Ep5-Thesis", "component": "PullQuote", "startWord": "none", "startOccurrence": 1 },
+  { "id": "Ep5-RoadmapRecap", "component": "RoadmapRecap", "startWord": "next", "startOccurrence": 1 },
+  { "id": "Ep5-ClosingCTA", "component": "SceneClosingCTA2", "startWord": "full", "startOccurrence": 1 }
+]

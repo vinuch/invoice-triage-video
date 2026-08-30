@@ -1,0 +1,13 @@
+[
+  { "id": "Ep3-Recap", "component": "ArchitectureDiagram", "startWord": "Two", "startOccurrence": 1 },
+  { "id": "Ep3-Hook", "component": "ArchitectureDiagram", "startWord": "What", "startOccurrence": 1 },
+  { "id": "Ep3-ComposeFile", "component": "TerminalReveal", "startWord": "This", "startOccurrence": 1 },
+  { "id": "Ep3-Schema", "component": "TerminalReveal", "startWord": "One", "startOccurrence": 3 },
+  { "id": "Ep3-DockerUp", "component": "TerminalReveal", "startWord": "bring", "startOccurrence": 1 },
+  { "id": "Ep3-DbPy", "component": "TerminalReveal", "startWord": "connection", "startOccurrence": 1 },
+  { "id": "Ep3-ValidatePlug", "component": "TerminalReveal", "startWord": "plugs", "startOccurrence": 1 },
+  { "id": "Ep3-AuditTrail", "component": "TerminalReveal", "startWord": "audit", "startOccurrence": 1 },
+  { "id": "Ep3-Rerun", "component": "TerminalReveal", "startWord": "Run", "startOccurrence": 2 },
+  { "id": "Ep3-RoadmapRecap", "component": "RoadmapRecap", "startWord": "Next", "startOccurrence": 1 },
+  { "id": "Ep3-ClosingCTA", "component": "SceneClosingCTA2", "startWord": "Full", "startOccurrence": 1 }
+]

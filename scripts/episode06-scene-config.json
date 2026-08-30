@@ -1,0 +1,15 @@
+[
+  { "id": "Ep6-Recap", "component": "ArchitectureDiagram", "startWord": "last", "startOccurrence": 1 },
+  { "id": "Ep6-DeterministicPrinciple", "component": "PullQuote", "startWord": "every", "startOccurrence": 1 },
+  { "id": "Ep6-FiveChecks", "component": "TerminalReveal", "startWord": "five", "startOccurrence": 1 },
+  { "id": "Ep6-SeverityLogic", "component": "PullQuote", "startWord": "severity", "startOccurrence": 2 },
+  { "id": "Ep6-MathCheck", "component": "TerminalReveal", "startWord": "simplest", "startOccurrence": 1 },
+  { "id": "Ep6-DuplicateCheck", "component": "TerminalReveal", "startWord": "changed", "startOccurrence": 1 },
+  { "id": "Ep6-ConfidenceFloor", "component": "TerminalReveal", "startWord": "floor", "startOccurrence": 2 },
+  { "id": "Ep6-MissingPO", "component": "TerminalReveal", "startWord": "po", "startOccurrence": 2 },
+  { "id": "Ep6-HighValue", "component": "TerminalReveal", "startWord": "value", "startOccurrence": 2 },
+  { "id": "Ep6-StatusLogic", "component": "TerminalReveal", "startWord": "independent", "startOccurrence": 1 },
+  { "id": "Ep6-Thesis", "component": "PullQuote", "startWord": "outcomes", "startOccurrence": 1 },
+  { "id": "Ep6-RoadmapRecap", "component": "RoadmapRecap", "startWord": "next", "startOccurrence": 1 },
+  { "id": "Ep6-ClosingCTA", "component": "SceneClosingCTA2", "startWord": "full", "startOccurrence": 1 }
+]

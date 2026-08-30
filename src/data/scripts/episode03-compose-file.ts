@@ -1,6 +1,5 @@
 import {TerminalScript} from '../../compositions/TerminalReveal';
 
-// PLACEHOLDER — replace with real docker-compose.yml content once Adelle syncs
 export const composeFileScript: TerminalScript = {
   title: 'docker-compose.yml',
   lines: [
@@ -8,17 +7,19 @@ export const composeFileScript: TerminalScript = {
     {type: 'output', text: '  postgres:', frameIn: 25, dim: true},
     {type: 'output', text: '    image: postgres:16', frameIn: 45, dim: true},
     {type: 'output', text: '    environment:', frameIn: 65, dim: true},
-    {type: 'output', text: '      POSTGRES_USER: invoice_app', frameIn: 85, dim: true},
-    {type: 'output', text: '      POSTGRES_PASSWORD: ${DB_PASSWORD}', frameIn: 105, dim: true},
-    {type: 'output', text: '      POSTGRES_DB: invoice_triage', frameIn: 125, dim: true},
-    {type: 'output', text: '    volumes:', frameIn: 150, dim: true},
-    {type: 'output', text: '      - pgdata:/var/lib/postgresql/data', frameIn: 170, dim: true},
-    {type: 'output', text: '    healthcheck:', frameIn: 195, dim: true},
-    {type: 'output', text: '      test: ["CMD-SHELL", "pg_isready"]', frameIn: 215, dim: true},
-    {type: 'output', text: '  redis:', frameIn: 245},
-    {type: 'output', text: '    image: redis:7-alpine', frameIn: 265, dim: true},
-    {type: 'output', text: '    ports: ["6379:6379"]', frameIn: 285, dim: true},
-    {type: 'output', text: '    healthcheck:', frameIn: 305, dim: true},
-    {type: 'output', text: '      test: ["CMD", "redis-cli", "ping"]', frameIn: 325, dim: true},
+    {type: 'output', text: '      POSTGRES_USER: ${POSTGRES_USER}', frameIn: 85, dim: true},
+    {type: 'output', text: '      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}', frameIn: 105, dim: true},
+    {type: 'output', text: '      POSTGRES_DB: ${POSTGRES_DB}', frameIn: 125, dim: true},
+    {type: 'output', text: '    ports:', frameIn: 145, dim: true},
+    {type: 'output', text: '      - "${POSTGRES_PORT:-5432}:5432"', frameIn: 165, dim: true},
+    {type: 'output', text: '    volumes:', frameIn: 185, dim: true},
+    {type: 'output', text: '      - pgdata:/var/lib/postgresql/data', frameIn: 205, dim: true},
+    {type: 'output', text: '      - ./db/schema.sql:/docker-entrypoint-initdb.d/schema.sql', frameIn: 225, dim: true},
+    {type: 'output', text: '    healthcheck:', frameIn: 250, dim: true},
+    {type: 'output', text: '      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]', frameIn: 270, dim: true},
+    {type: 'output', text: '  redis:', frameIn: 300},
+    {type: 'output', text: '    image: redis:7', frameIn: 320, dim: true},
+    {type: 'output', text: '    healthcheck:', frameIn: 340, dim: true},
+    {type: 'output', text: '      test: ["CMD", "redis-cli", "ping"]', frameIn: 360, dim: true},
   ],
 };
