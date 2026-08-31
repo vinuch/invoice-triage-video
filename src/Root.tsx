@@ -222,6 +222,49 @@ export const RemotionRoot: React.FC = () => {
   />
 ))}
 
+
+{/* Kit previews -- standalone components, not tied to an episode timeline */}
+<Composition
+  id="PipelineFlow3DPreview"
+  component={componentMap.PipelineFlow3D}
+  durationInFrames={240}
+  fps={FPS}
+  width={WIDTH}
+  height={HEIGHT}
+/>
+<Composition
+  id="DiffRevealPreview"
+  component={componentMap.DiffReveal}
+  durationInFrames={150}
+  fps={FPS}
+  width={WIDTH}
+  height={HEIGHT}
+  defaultProps={{
+    title: 'app/validate.py',
+    lines: [
+      {text: 'def check_confidence(field):', type: 'context'},
+      {text: '    if field.confidence < 0.75:', type: 'remove'},
+      {text: '    if field.confidence < CONFIDENCE_FLOOR:', type: 'add'},
+      {text: '        return "review"', type: 'context'},
+    ],
+  }}
+/>
+<Composition
+  id="MetricCounterPreview"
+  component={componentMap.MetricCounter}
+  durationInFrames={90}
+  fps={FPS}
+  width={WIDTH}
+  height={HEIGHT}
+  defaultProps={{
+    from: 0,
+    to: 7900,
+    prefix: '$',
+    label: 'Invoice total',
+    startFrame: 10,
+    durationFrames: 45,
+  }}
+/>
     </>
   );
 };

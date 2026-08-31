@@ -1,4 +1,7 @@
 import type {ComponentType} from 'react';
+import {PipelineFlow3D} from './compositions/PipelineFlow3D';
+import {DiffReveal} from './compositions/DiffReveal';
+import {MetricCounter} from './compositions/MetricCounter';
 // Central registry mapping timeline component names -> actual React components.
 // Add an entry here whenever a new component is used in a timeline config.
 import {SceneRecapHook} from './compositions/episode02/SceneRecapHook';
@@ -39,4 +42,7 @@ export const componentMap: Record<string, ComponentType<any>> = {
   SceneClosingCTA,
   ArchitectureDiagram,
   SceneBeats,
+  PipelineFlow3D,
+  DiffReveal,
+  MetricCounter,
 };
