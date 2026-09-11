@@ -7,6 +7,7 @@ export const colors = {
   approved: '#5FD98A',
   review: '#E8A33D',
   mismatch: '#E5484D',
+  agent: '#5B8DEF', // pipeline/agent node accent, distinct from status colors
 } as const;
 
 export const fonts = {

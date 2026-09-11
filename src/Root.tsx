@@ -10,6 +10,8 @@ import {FinalVideoEp4} from './compositions/FinalVideoEp4';
 import {FinalVideoEp6} from './compositions/FinalVideoEp6';
 import {FinalVideoCodexRunme} from './compositions/FinalVideoCodexRunme';
 import {FinalVideoEp5} from './compositions/FinalVideoEp5';
+import {FinalVideoBuild21, finalVideoBuild21DurationInFrames} from './compositions/FinalVideoBuild21';
+import {FinalVideoBuild22, finalVideoBuild22DurationInFrames} from './compositions/FinalVideoBuild22';
 import {SceneOpeningHookV2} from './compositions/SceneOpeningHookV2';
 import {SceneJobOne} from './compositions/SceneJobOne';
 import {SceneJobTwo} from './compositions/SceneJobTwo';
@@ -264,6 +266,26 @@ export const RemotionRoot: React.FC = () => {
     startFrame: 10,
     durationFrames: 45,
   }}
+/>
+
+{/* Build 21 — draft full assembly, silent, no narration timeline yet */}
+<Composition
+  id="FinalVideoBuild21"
+  component={FinalVideoBuild21}
+  durationInFrames={finalVideoBuild21DurationInFrames}
+  fps={FPS}
+  width={WIDTH}
+  height={HEIGHT}
+/>
+
+{/* Build 22 — draft full assembly, silent, no narration timeline yet */}
+<Composition
+  id="FinalVideoBuild22"
+  component={FinalVideoBuild22}
+  durationInFrames={finalVideoBuild22DurationInFrames}
+  fps={FPS}
+  width={WIDTH}
+  height={HEIGHT}
 />
     </>
   );
